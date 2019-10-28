@@ -136,39 +136,90 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-HTML5总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/28/hello-world/">Hello World</a>
+      <a class="article-title" href="/2019/09/15/HTML5%E6%80%BB%E7%BB%93/">HTML5总结</a>
     </h1>
   
 
         
-        <a href="/2019/10/28/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-28T05:14:12.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-28</time>
+        <a href="/2019/09/15/HTML5%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2019-09-15T14:32:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="2019-9-12-学习总结"><a href="#2019-9-12-学习总结" class="headerlink" title="2019/9/12 学习总结"></a>2019/9/12 学习总结</h1><hr>
+<h4 id="一、HTML5相关知识"><a href="#一、HTML5相关知识" class="headerlink" title="一、HTML5相关知识"></a>一、HTML5相关知识</h4><ol>
+<li>开头<blockquote>
+<p> <code>&lt;!DOCTYPE html&gt;</code>html5开头`  </p>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<p> <code>&lt;meta charset=&quot;UTF-8&quot;</code>设置语言`  </p>
+</blockquote>
+<ol start="2">
+<li><p>基本标签</p>
+<blockquote>
+<p><code>&lt;hr/&gt; 分割线 &lt;br/&gt; 换行</code><br><code>粗体 &lt;b&gt;&lt;/b&gt; &lt;strong&gt;&lt;/strong&gt;</code><br><code>斜体 &lt;i&gt;&lt;/i&gt;  &lt;em&gt;&lt;/em&gt;</code><br><code>删除线 &lt;s&gt;&lt;/s&gt; &lt;del&gt;&lt;/del&gt;</code><br><code>下划线 &lt;u&gt;&lt;/u&gt; &lt;ins&gt;&lt;/ins&gt;</code></p>
+</blockquote>
+</li>
+<li><p>标签属性</p>
+<blockquote>
+<p><code>&lt;hr color=&#39;red&#39; width=&#39;600&#39;&gt;</code> 有的标签可以设置其属性<br>例<code>&lt;img border=&#39;1&#39;&gt;</code></p>
+</blockquote>
+</li>
+<li><p>a标签的属性</p>
+<blockquote>
+<p><code>&lt;a href=#id&gt;&lt;/a&gt;</code> 设置锚点链接在其它标签下增加id<br>target 是在新的页面中打开</p>
+</blockquote>
+</li>
+<li><p>base</p>
+<pre><code>``&lt;head&gt;
+    &lt;base target=&quot;_blank&quot;&gt; 规定页面中所有接和表单在何处打开。该属性会被每个链接target 属性覆盖
+&lt;/head&gt;``</code></pre><blockquote>
+<p>取消全局可以在不需设置的地方加上target=”_self”</p>
+</blockquote>
+</li>
+<li><p>特殊字符</p>
+<blockquote>
+<p><code>空格符 &amp;nbsp; 版权 &amp;copy;</code></p>
+</blockquote>
+</li>
+<li><p>table表格</p>
+<blockquote>
+<img src="/assets/blogImg/9.12%EF%BC%881%EF%BC%89.png" class="">  
+<p>合并单元格：<code>rowspan</code>    跨列合并:<code>colspan</code></p>
+</blockquote>
+</li>
+<li><p>表单新增属性</p>
+<blockquote>
+<img src="/assets/blogImg/9.12%EF%BC%883%EF%BC%89.png" class="">  
+<img src="/assets/blogImg/9.12%EF%BC%884%EF%BC%89.png" class=""> 
+<img src="/assets/blogImg/9.12%EF%BC%885%EF%BC%89.png" class="">  
+<img src="/assets/blogImg/9.12%EF%BC%886%EF%BC%89.png" class=""> </blockquote>
+</li>
+<li><p><code>display:block</code>  定义块元素`</p>
+</li>
+<li><p>H5新增</p>
+<blockquote>
+<p><code>&lt;header&gt;</code> 页头<br><code>&lt;nav&gt;</code> 导航栏<code></code><footer><code>页脚</code><article><code>定义文章</code><section><code>定义文档中的节</code><aside>` 侧边</p>
+</blockquote>
+</li>
+<li><p>音视频标签</p>
+<blockquote>
+<p><code>&lt;audio&gt;</code>定义音频内容<br><code>&lt;video&gt;</code>定义视频（video 或者 movie）<br><code>&lt;source&gt;</code>定义多媒体资源 <code>&lt;video&gt;</code> 和 <code>&lt;audio&gt;</code></p>
+</blockquote>
+</li>
+</ol>
 
       
 
@@ -177,11 +228,533 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/28/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/15/HTML5%E6%80%BB%E7%BB%93/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-微信小程序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2019-09-10T14:26:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="小程序学习"><a href="#小程序学习" class="headerlink" title="小程序学习"></a>小程序学习</h1><h4 id="小程序结构"><a href="#小程序结构" class="headerlink" title="小程序结构"></a>小程序结构</h4><blockquote>
+<p>最上层App -&gt; 多个Page -&gt;多个组件</p>
+</blockquote>
+<img src="/assets/blogImg/weChat.png" class="">
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Stable Build</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/10/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-axios学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/01/axios%E5%AD%A6%E4%B9%A0/">axios学习</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/01/axios%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2019-09-01T05:22:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Vue中axios"><a href="#Vue中axios" class="headerlink" title="Vue中axios"></a>Vue中axios</h1><hr>
+<h4 id="一、安装axios"><a href="#一、安装axios" class="headerlink" title="一、安装axios"></a>一、安装axios</h4><blockquote>
+<p>npm install axios –save</p>
+</blockquote>
+<h4 id="二、在main中引入"><a href="#二、在main中引入" class="headerlink" title="二、在main中引入"></a>二、在main中引入</h4><blockquote>
+<p>import axios from ‘axios’</p>
+</blockquote>
+<h4 id="三、基本用法"><a href="#三、基本用法" class="headerlink" title="三、基本用法"></a>三、基本用法</h4><p>get请求进行参数拼接</p>
+<img src="/assets/blogImg/axios-1.png" class="">
+
+<p>进行并发请求</p>
+<img src="/assets/blogImg/axios-2.png" class="">
+
+
+<p>全局配置</p>
+<img src="/assets/blogImg/axios-3.png" class="">
+
+
+<p>常见的配置选项</p>
+<img src="/assets/blogImg/axios-4.png" class="">
+
+
+<h4 id="四、封装axios"><a href="#四、封装axios" class="headerlink" title="四、封装axios"></a>四、封装axios</h4><p>创建对应的axios实例</p>
+<img src="/assets/blogImg/axios-5.png" class="">
+
+
+<p>调用</p>
+<img src="/assets/blogImg/axios-6.png" class="">
+
+
+<h4 id="五、axios拦截器使用"><a href="#五、axios拦截器使用" class="headerlink" title="五、axios拦截器使用"></a>五、axios拦截器使用</h4><p>请求的拦截</p>
+<p>请求响应的拦截</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">axios</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/01/axios%E5%AD%A6%E4%B9%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Mock的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/28/Mock%E7%9A%84%E4%BD%BF%E7%94%A8/">Mock的使用</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/28/Mock%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2019-08-28T14:14:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Mock使用"><a href="#Mock使用" class="headerlink" title="Mock使用"></a>Mock使用</h1><hr>
+<h4 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h4><blockquote>
+<p>npm install mockjs –save-dev</p>
+</blockquote>
+<h4 id="二、基本用法"><a href="#二、基本用法" class="headerlink" title="二、基本用法"></a>二、基本用法</h4><blockquote>
+<p>在src目录下创建Mock文件js文讲<br>一般我在src目录上创建Mock/data.js文件</p>
+</blockquote>
+<blockquote>
+<p>引入文件</p>
+</blockquote>
+<img src="/assets/blogImg/Mock-1.png" class="">
+
+<blockquote>
+<p>在主文件中引入数据<br>import ‘../mork/data’</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">mock</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/28/Mock%E7%9A%84%E4%BD%BF%E7%94%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-vue-cli学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/22/vue-cli%E5%AD%A6%E4%B9%A0/">vue-cli学习</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/22/vue-cli%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2019-08-22T14:10:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Vue-cli3学习"><a href="#Vue-cli3学习" class="headerlink" title="Vue-cli3学习"></a>Vue-cli3学习</h1><hr>
+<h4 id="1-安装node-js环境（上篇博客有提及到）"><a href="#1-安装node-js环境（上篇博客有提及到）" class="headerlink" title="1.安装node.js环境（上篇博客有提及到）"></a>1.安装node.js环境（上篇博客有提及到）</h4><blockquote>
+<p>我的node版本为  </p>
+</blockquote>
+<img src="/assets/blogImg/vueCli-1.png" class="">  
+
+<h4 id="安装vue-cli"><a href="#安装vue-cli" class="headerlink" title="安装vue-cli"></a>安装vue-cli</h4><blockquote>
+<p>配置安装cnpn（在国内会快一些）<br>$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+</blockquote>
+<blockquote>
+<p>安装vue-cli脚手架<br>$ cnpm install vue-cli -g</p>
+</blockquote>
+<h4 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h4><blockquote>
+<p>$ vue create [projectname]<br>按键盘上下键可以选择默认（default）还是手动（Manually），如果选择default，一路回车执行下去就行了</p>
+</blockquote>
+<ul>
+<li>自定义相关配置（Manually）</li>
+<li>注意，空格键是选中与取消，A键是全选</li>
+<li>TypeScript 支持使用 TypeScript 书写源码</li>
+<li>Progressive Web App (PWA) Support PWA 支持。</li>
+<li>Router 支持 vue-router 。</li>
+<li>Vuex 支持 vuex 。</li>
+<li>CSS Pre-processors 支持 CSS 预处理器。</li>
+<li>Linter / Formatter 支持代码风格检查和格式化。</li>
+<li>Unit Testing 支持单元测试。</li>
+<li>E2E Testing 支持 E2E 测试。</li>
+</ul>
+<blockquote>
+<p>我选择的</p>
+</blockquote>
+<hr>
+<img src="/assets/blogImg/vueCli-2.png" class="">  
+
+<p>是否使用history路由模式</p>
+<img src="/assets/blogImg/vueCli-3.png" class="">  
+
+
+<img src="/assets/blogImg/vueCli-4.png" class="">  
+<ul>
+<li>css的预处理，我选择的是SCSS/SASS</li>
+<li>我选择的是ESLint + Prettier</li>
+<li>选择语法检查方式，我自己选择保存就检测<br>第一个是保存检测，第二个是fix和commit的时候检测</li>
+<li>单元测试，我选择了Mocha</li>
+<li>配置文件存放地方<br>第一个是独立文件夹位置，第二个是在package.json文件里</li>
+<li>询问是否记录这一次的配置，以便下次使用，如一开始的时候会显示的vuecli3配置</li>
+</ul>
+<blockquote>
+<p>回车确定</p>
+</blockquote>
+<blockquote>
+<p>装好后，启动<br>cd my-project // 进入到项目根目录<br>npm run serve // 启动项目</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/22/vue-cli%E5%AD%A6%E4%B9%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-node-js" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/16/node-js/">node.js</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/16/node-js/" class="archive-article-date">
+  	<time datetime="2019-08-16T14:07:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="node环境安装"><a href="#node环境安装" class="headerlink" title="node环境安装"></a>node环境安装</h1><h2 id="https-www-cnblogs-com-lgx5-p-10732016-html"><a href="#https-www-cnblogs-com-lgx5-p-10732016-html" class="headerlink" title="https://www.cnblogs.com/lgx5/p/10732016.html"></a><a href="https://www.cnblogs.com/lgx5/p/10732016.html" target="_blank" rel="noopener" title="原文配置">https://www.cnblogs.com/lgx5/p/10732016.html</a></h2><h4 id="一、安装node-js"><a href="#一、安装node-js" class="headerlink" title="一、安装node.js"></a>一、安装node.js</h4><blockquote>
+<p>去官网下载安装包 地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener" title="node官网">https://nodejs.org/en/</a>一般下载左边的推荐下载<br>打开cmd 检查是否正常  </p>
+</blockquote>
+<pre><code>`echo %%PATH `检查环境变量
+`node -v` 查看版本
+`npm -v` node自带npm但是不是最新的  </code></pre><blockquote>
+<p>一开始npm的本地仓库目录在C:\Users\clone\AppData\Roaming<br>我们可以吧它移到别的目录下 （我一般和node.js的位置放一起）<br>这时候我们可以改变一开始的默认路径 我们需要新建node_global（安装的配置）、<br>node_cache（日志文件）两个文件夹<br>cmd 改变目录位置  </p>
+</blockquote>
+<pre><code>`npm config set prefix &quot;D:\nodejs\node_global&quot;(建的文件夹的位置)`
+`npm config set cache &quot;D:\nodejs\node_cache&quot;`</code></pre><blockquote>
+<p>检查目录是否改变 npm list -global</p>
+</blockquote>
+<blockquote>
+<p>注意，此时，默认的模块D:\nodejs\node_modules 目录<br>将会改变为D:\nodejs\node_global\node_modules 目录，<br>如果直接运行npm install等命令会报错的。<br>我们需要做1件事情：<br>1、增加环境变量NODE_PATH 内容是：D:\nodejs\node_global\node_modules(建的文件夹的位置)</p>
+</blockquote>
+<blockquote>
+<p>现在我们来装个模块试试，<br>在cmd命令行里面，输入“npm install express -g”（“-g”这个参数意思是装到global目录下，也就是上面说设置的“D:\nodejs\node_global”里面。）</p>
+</blockquote>
+<blockquote>
+<p>如果这个步骤出现错误，如：operation not permitted, mkdir ‘C:\Program Files\nodejs’，请使用管理员身份打开cmd命令行。</p>
+</blockquote>
+<blockquote>
+<p>安装cnpm </p>
+</blockquote>
+<pre><code>` npm install -g cnpm --registry=https://registry.npm.taobao.org`</code></pre><blockquote>
+<p>安装vue</p>
+</blockquote>
+<pre><code>`npm install vue-cli -g`</code></pre><blockquote>
+<p>都要管理员权限运行cmd</p>
+</blockquote>
+<blockquote>
+<p>安装webpack </p>
+</blockquote>
+<pre><code>`npm install -g webpack`</code></pre><blockquote>
+<p>安装特定版本 webpack（比如 3.x.x）：</p>
+</blockquote>
+<pre><code>`npm install -g webpack@3`</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">node.js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/16/node-js/">展开全文 >></a>
         </p>
       
 
@@ -231,7 +804,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="hexo创建博客"><a href="#hexo创建博客" class="headerlink" title="hexo创建博客"></a>hexo创建博客</h1><hr>
+<h4 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h4><blockquote>
+<p>需要安装node<br>git<br>cnpn</p>
+</blockquote>
+<h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><blockquote>
+<p>cnpm install -g hexo-cli 安装hexo脚手架<br>创建文件目录（blog）<br>进入到文件下 <code>hexo init</code> 创建hexo所需要的文件</p>
+</blockquote>
+<h4 id="如何推到github上"><a href="#如何推到github上" class="headerlink" title="如何推到github上"></a>如何推到github上</h4><blockquote>
+<p>在github上新建一个仓库 名字必须要（名字.github.io）<br>安装cnpn/npm install hexo-deployer-git –save<br>修改根目录的_config.yml配置文件</p>
+</blockquote>
+<img src="/assets/blogImg/hexo-1.png" class=""> 
+
+<h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><blockquote>
+<p>hexo clean 清除缓存文件<br>hexo g 生成缓存和静态文件<br>hexo d 重新部署到服务器上</p>
+</blockquote>
+<h4 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h4><blockquote>
+<p>去官网找到自己喜欢的主题，把github的文件clone过来到themes这个文件下<br>设置根目录下面的_config.yml </p>
+</blockquote>
+<img src="/assets/blogImg/hexo-2.png" class="">  
       
 
       
@@ -320,26 +911,86 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">旧事</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/08/10/test/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/01/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/01/hello-world/" class="archive-article-date">
+  	<time datetime="2019-08-01T03:24:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/01/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -454,11 +1105,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">html5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">旧事</a>
+                <a href="javascript:void(0)" class="js-tag color5">mock</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">axios</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">node.js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Stable Build</a>
               </li>
              
               <li class="article-tag-list-item">
